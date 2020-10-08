@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Facturacion</title>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="header__logo">
+        <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+      </figure>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="./index.html">INICIO</a></li>
+          <li class="header__item"><a class="header__link" href="#">FACTURACION</a></li>
+          <li class="header__item"><a class="header__link" href="./reportes.html">REPORTES</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="factura__container">
+        <form class="factura" action="" id="factura">
+          <section class="factura__top">
+            <div class="top">
+              <div class="top__left">
+                <label class="top__label__left" for="facturaNombre"
+                  >Nombre / Razon social</label
+                >
+                <input
+                  class="top__input__left"
+                  type="text"
+                  id="facturaNombre"
+                />
+              </div>
+              <div class="top__right">
+                <label class="top__label__right" for="facturaFecha"
+                  >Fecha</label
+                >
+                <input
+                  class="top__input__right disabled3"
+                  type="text"
+                  id="facturaFecha"
+                />
+              </div>
+            </div>
+
+            <div class="top">
+              <div class="top__left">
+                <label class="top__label__left" for="facturaRuc">R.U.C</label>
+                <input class="top__input__left" type="text" id="facturaRuc" />
+              </div>
+              <div class="top__right">
+                <label class="top__label__right" for="facturaNumero"
+                  ># Factura</label
+                >
+                <input
+                  class="top__input__right disabled3"
+                  type="text"
+                  id="facturaNumero"
+                />
+              </div>
+            </div>
+
+            <div class="top">
+              <div class="top__left">
+                <label class="top__label__left" for="facturaDireccion"
+                  >Direccion</label
+                >
+                <input
+                  class="top__input__left"
+                  type="text"
+                  id="facturaDireccion"
+                />
+              </div>
+              <div class="top__right">
+                <small class="texto-rojo" id="helper" hidden>
+                  Completar datos y/o agregar productos!!!
+                </small>
+              </div>
+            </div>
+          </section>
+          
+          <section class="factura__bottom">
+            <div class="bottom__left">
+              <table class="table">
+                <thead class="thead">
+                  <th class="thead__cant">CANT.</th>
+                  <th class="thead__desc">DESCRIPCION</th>
+                  <th class="thead__unit">P.UNITARIO</th>
+                  <th class="thead__total">P.TOTAL</th>
+                  <th class="thead__accion">ACCION</th>
+                </thead>
+
+                <tbody class="tbody" id="tbody">
+                  <!-- <tr class="tr">
+                    <td class="tbody__cant">1</td>
+                    <td class="tbody__desc">Repuesto</td>
+                    <td class="tbody__unit">2.50</td>
+                    <td class="tbody__total">2.50</td>
+                    <td class="tbody__eliminar">button...</td>
+                  </tr> -->
+                  
+                </tbody>
+              </table>
+              <div class="table__total">
+                <label class="total__label" for="">TOTAL</label>
+                <input class="total__input disabled2" type="text" id="totalInput"/>
+              </div>
+            </div>
+
+            <div class="bottom__right">
+              <div class="producto__container">
+                <label for="">PRODUCTOS</label>
+                <select name="selectProductos" id="selectProductos">
+                  <option value="0">--- Seleccione ---</option>
+                </select>
+                <div class="producto__detalle">
+                  <div class="detalle__left">
+                    <div class="detalle__fila">
+                      <label >Cantidad</label>
+                      <input class="cantidad" type="number" min="1" placeholder="0" id="cantidad"/>
+                    </div>
+
+                    <div class="detalle__fila">
+                      <label>P. unitario</label>
+                      <input type="text" class="disabled" id="precioUnitario"/>
+                    </div>
+
+                    <div class="detalle__fila">
+                      <label>P. total</label>
+                      <input type="text" class="disabled" id="precioTotal"/>
+                    </div>
+                  </div>
+                  <div class="detalle__right">
+                    <button type="button" id="btnAdd">+</button>
+                  </div>
+                </div>
+                <figure class="image__container">
+                  <img src="" alt="" id="imagen"/>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <div>
+            <button class="factura__submit" type="submit">GUARDAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./js/productos.js"></script>
+    <script src="./js/facturacion.js"></script>
+  </body>
+</html>

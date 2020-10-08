@@ -1,0 +1,26 @@
+@import url("./variables.css");
+@import url("./header.css");
+@import url("./factura.css");
+@import url("./producto.css");
+@import url("./reportes.css");
+@import url("./index.css");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--violet-3);
+  font-family: var(--monserrat);
+}
+
+main {
+  max-width: var(--width);
+  margin: 0px auto;
+}

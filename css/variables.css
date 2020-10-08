@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  /* background */
+  --violet-3: #f4f1f9;
+
+  /* header */
+  --violet-1: #5d418e;
+
+  /* header: hover */
+  --violet-2: #6d6fc8;
+
+  /* card products */
+  --green-1: #edf2d9;
+  --green-2: #51d488;
+  --green-3: #A7C048;
+  --orange-1: #ff9269;
+  --pink: #ff7892;
+
+  --width: 1440px;
+
+  --monserrat: "Montserrat", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
